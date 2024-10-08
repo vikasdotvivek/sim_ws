@@ -53,6 +53,16 @@ install(DIRECTORY launch models rviz urdf worlds maps params
   DESTINATION share/${PROJECT_NAME}/
 )
 
+install(
+  PROGRAMS
+    src/lab4/task1.py
+    src/lab4/task2.py
+    src/lab4/task3.py
+    src/lab4/dynamic_obstacles.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+
 ################################################################################
 # Macro for ament package
 ################################################################################

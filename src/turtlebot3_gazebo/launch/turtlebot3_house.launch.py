@@ -24,6 +24,7 @@ from launch_ros.actions import Node
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
+from launch.conditions import IfCondition
 
 
 def generate_launch_description():
@@ -32,6 +33,7 @@ def generate_launch_description():
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
+    use_rviz = LaunchConfiguration('use_rviz', default='true')
     x_pose = LaunchConfiguration('x_pose', default='0')
     y_pose = LaunchConfiguration('y_pose', default='0')
 
@@ -76,7 +78,8 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         arguments=['-d', rviz_config_dir],
-        output='screen'
+        output='screen',
+        condition=IfCondition(use_rviz),
     )
 
     ld = LaunchDescription()
