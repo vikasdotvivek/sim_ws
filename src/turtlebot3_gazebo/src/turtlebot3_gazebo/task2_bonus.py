@@ -25,7 +25,7 @@ class Map():
         self.image_array = self.__get_obstacle_map(self.map_im, self.map_df)
 
     def __open_map(self):
-        yaml_path = '/home/me597/final_project/sim_ws/src/turtlebot3_gazebo/maps/sync_classroom_map'  # hardcoded path
+        yaml_path = '/home/me597/final_project/sim_ws/src/turtlebot3_gazebo/maps/map'  # hardcoded path
         f = open(yaml_path +'.yaml', 'r')
         map_df = pd.json_normalize(yaml.safe_load(f))
         

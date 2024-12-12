@@ -24,7 +24,7 @@ class MapProcessor():
         self.inf_map_img_array = np.zeros(self.image_array.shape)
 
     def __open_map(self):
-        yaml_path = '/home/me597/final_project/sim_ws/src/turtlebot3_gazebo/maps/sync_classroom_map'
+        yaml_path = '/home/me597/final_project/sim_ws/src/turtlebot3_gazebo/maps/map'
         f = open(yaml_path +'.yaml', 'r')
         map_df = yaml.safe_load(f)
 

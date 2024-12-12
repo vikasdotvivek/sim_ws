@@ -31,7 +31,7 @@ class Map():
     def __open_map(self):
         #yaml_path = '/home/me597/lab4/src/task_7/maps/sync_classroom_map'
         #yaml_path = '/home/me597/ros2_ws/src/task_7/maps/classroom_map'
-        yaml_path = '/home/me597/final_project/sim_ws/src/turtlebot3_gazebo/maps/sync_classroom_map'     #hard-coding it, taking no chances
+        yaml_path = '/home/me597/final_project/sim_ws/src/turtlebot3_gazebo/maps/map'     #hard-coding it, taking no chances
         f = open(yaml_path +'.yaml', 'r')
         map_df = pd.json_normalize(yaml.safe_load(f))
        
