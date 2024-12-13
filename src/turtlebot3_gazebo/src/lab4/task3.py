@@ -387,6 +387,65 @@ class Navigation(RCLPyNode):
         self.max_angular_speed = 1.0
         self.last_update_time = self.get_clock().now()
 
+
+
+        self.obstacle_tolerance = 0.5  # Tolerance distance for obstacle detection
+
+
+
+    def detect_obstacle(self, current_pose):
+        # Placeholder for actual obstacle detection logic
+        # For simplicity, assume we know obstacle locations
+        obstacles = [
+            (2.0, 2.0),  # Example obstacle coordinates (x, y)
+            (4.0, 3.0)
+        ]
+        
+        for obs in obstacles:
+            distance = math.sqrt(
+                (current_pose.pose.position.x - obs[0])**2 +
+                (current_pose.pose.position.y - obs[1])**2
+            )
+            if distance < self.obstacle_tolerance:
+                return obs  # Return the obstacle position if detected
+        return None
+
+    def generate_bypass_path(self, current_pose, obstacle_position, original_path):
+        # Generate a simple local bypass path
+        bypass_path = []
+
+        # Create intermediate points to bypass the obstacle
+        direction_vector = np.array([
+            current_pose.pose.position.x - obstacle_position[0],
+            current_pose.pose.position.y - obstacle_position[1]
+        ])
+        direction_vector = direction_vector / np.linalg.norm(direction_vector)  # Normalize
+
+        # Add points around the obstacle
+        offset_distance = self.obstacle_tolerance + 0.5
+        bypass_point_1 = (
+            obstacle_position[0] + direction_vector[1] * offset_distance,
+            obstacle_position[1] - direction_vector[0] * offset_distance
+        )
+        bypass_point_2 = (
+            obstacle_position[0] - direction_vector[1] * offset_distance,
+            obstacle_position[1] + direction_vector[0] * offset_distance
+        )
+
+        for point in [bypass_point_1, bypass_point_2]:
+            pose = PoseStamped()
+            pose.pose.position.x = point[0]
+            pose.pose.position.y = point[1]
+            pose.pose.orientation.w = 1.0
+            bypass_path.append(pose)
+
+        return bypass_path + original_path.poses  # Return bypass path merged with original   
+
+
+
+
+        
+
     def __goal_pose_cbk(self, msg):
         self.get_logger().info("Received new goal pose")
         self.goal_pose = msg
@@ -627,6 +686,32 @@ class Navigation(RCLPyNode):
                 if self.current_waypoint_index < len(self.path.poses):
                     # Find target point along path
                     target_pose, new_index = self.find_target_point(vehicle_pose)
+
+
+
+
+
+
+                    # Detect obstacle
+                    obstacle = self.detect_obstacle(vehicle_pose)
+                    if obstacle:
+                        self.get_logger().info(f"Obstacle detected at {obstacle}, generating bypass path.")
+                        bypass_path = self.generate_bypass_path(vehicle_pose, obstacle, self.path)
+                        self.path.poses = bypass_path
+                        self.current_waypoint_index = 0
+
+                    # Follow the updated path
+                    target_pose, new_index = self.find_target_point(vehicle_pose)
+
+
+                
+
+
+
+
+
+
+
                     if target_pose is None:
                         continue
                        
