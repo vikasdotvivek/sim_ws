@@ -1,0 +1,313 @@
+{
+  "generator": "repository-static-triage",
+  "version": "1.0",
+  "repository": "vikasdotvivek/sim_ws",
+  "revision": "df363249f05cc2f09d9eadd5ed351bece17d1e06",
+  "tracked_files": 53,
+  "scanned": [
+    {
+      "path": "src/sim_utils/setup.py",
+      "lines": 26,
+      "bytes": 721
+    },
+    {
+      "path": "src/sim_utils/sim_utils/__init__.py",
+      "lines": 0,
+      "bytes": 0
+    },
+    {
+      "path": "src/sim_utils/sim_utils/red_ball_control.py",
+      "lines": 121,
+      "bytes": 3931
+    },
+    {
+      "path": "src/turtlebot3_gazebo/CMakeLists.txt",
+      "lines": 71,
+      "bytes": 2391
+    },
+    {
+      "path": "src/turtlebot3_gazebo/launch/amcl.launch.py",
+      "lines": 28,
+      "bytes": 779
+    },
+    {
+      "path": "src/turtlebot3_gazebo/launch/map_loader.launch.py",
+      "lines": 18,
+      "bytes": 607
+    },
+    {
+      "path": "src/turtlebot3_gazebo/launch/mapper.launch.py",
+      "lines": 50,
+      "bytes": 1857
+    },
+    {
+      "path": "src/turtlebot3_gazebo/launch/navigator.launch.py",
+      "lines": 112,
+      "bytes": 4009
+    },
+    {
+      "path": "src/turtlebot3_gazebo/launch/robot_state_publisher.launch.py",
+      "lines": 60,
+      "bytes": 1956
+    },
+    {
+      "path": "src/turtlebot3_gazebo/launch/spawn_cricketball.launch.py",
+      "lines": 68,
+      "bytes": 2217
+    },
+    {
+      "path": "src/turtlebot3_gazebo/launch/spawn_turtlebot3.launch.py",
+      "lines": 70,
+      "bytes": 2319
+    },
+    {
+      "path": "src/turtlebot3_gazebo/launch/task_5.launch.py",
+      "lines": 95,
+      "bytes": 3244
+    },
+    {
+      "path": "src/turtlebot3_gazebo/launch/turtlebot3_house.launch.py",
+      "lines": 94,
+      "bytes": 3214
+    },
+    {
+      "path": "src/turtlebot3_gazebo/launch/turtlebot3_house_norviz.launch.py",
+      "lines": 81,
+      "bytes": 2745
+    },
+    {
+      "path": "src/turtlebot3_gazebo/src/lab4/dynamic_obstacles.py",
+      "lines": 100,
+      "bytes": 3363
+    },
+    {
+      "path": "src/turtlebot3_gazebo/src/lab4/task1.py",
+      "lines": 40,
+      "bytes": 901
+    },
+    {
+      "path": "src/turtlebot3_gazebo/src/lab4/task2.py",
+      "lines": 40,
+      "bytes": 921
+    },
+    {
+      "path": "src/turtlebot3_gazebo/src/lab4/task3.py",
+      "lines": 41,
+      "bytes": 997
+    }
+  ],
+  "skipped": [
+    {
+      "path": ".github/workflows/code-improvement-review.yml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": ".gitignore",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "README.md",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/sim_utils/README.md",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/sim_utils/package.xml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/sim_utils/resource/sim_utils",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/sim_utils/setup.cfg",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/README.md",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/maps/map.pgm",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/maps/map.yaml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/cricket_ball/model.config",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/cricket_ball/model.rsdf",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/cricket_ball/model.sdf",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/trash_can/meshes/trash_can.dae",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/trash_can/model.config",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/trash_can/model.sdf",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/turtlebot3_common/meshes/burger_base.dae",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/turtlebot3_common/meshes/lds.dae",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/turtlebot3_common/meshes/r200.dae",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/turtlebot3_common/meshes/tire.dae",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/turtlebot3_common/meshes/waffle_base.dae",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/turtlebot3_common/model.config",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/turtlebot3_house/model.config",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/turtlebot3_house/model.sdf",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/turtlebot3_waffle/model.config",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/package.xml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/params/amcl.yaml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/params/map_server.yaml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/params/mapper_params_online_async.yaml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/rviz/tb3_gazebo.rviz",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/urdf/turtlebot3_waffle.urdf",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/worlds/empty_world.world",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/worlds/house_closed.world",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "src/turtlebot3_gazebo/worlds/turtlebot3_house.world",
+      "reason": "non-source format; content not audited"
+    }
+  ],
+  "manifests": [
+    "src/sim_utils/package.xml",
+    "src/sim_utils/setup.py",
+    "src/turtlebot3_gazebo/CMakeLists.txt",
+    "src/turtlebot3_gazebo/package.xml"
+  ],
+  "conventional_test_paths": [],
+  "findings": [
+    {
+      "rule": "silent-except",
+      "priority": "P2",
+      "path": "src/sim_utils/sim_utils/red_ball_control.py",
+      "line": 114,
+      "title": "Exception handler only passes",
+      "recommendation": "Decide whether the error is recoverable; surface nonrecoverable failures instead of silently continuing.",
+      "status": "review-required",
+      "source": "https://github.com/vikasdotvivek/sim_ws/blob/df363249f05cc2f09d9eadd5ed351bece17d1e06/src/sim_utils/sim_utils/red_ball_control.py#L114"
+    },
+    {
+      "rule": "bare-except",
+      "priority": "P2",
+      "path": "src/turtlebot3_gazebo/src/lab4/dynamic_obstacles.py",
+      "line": 92,
+      "title": "Bare except also catches interruption/exit",
+      "recommendation": "Catch the expected exception class and test cancellation; retain useful diagnostics.",
+      "status": "review-required",
+      "source": "https://github.com/vikasdotvivek/sim_ws/blob/df363249f05cc2f09d9eadd5ed351bece17d1e06/src/turtlebot3_gazebo/src/lab4/dynamic_obstacles.py#L92"
+    },
+    {
+      "rule": "silent-except",
+      "priority": "P2",
+      "path": "src/turtlebot3_gazebo/src/lab4/dynamic_obstacles.py",
+      "line": 92,
+      "title": "Exception handler only passes",
+      "recommendation": "Decide whether the error is recoverable; surface nonrecoverable failures instead of silently continuing.",
+      "status": "review-required",
+      "source": "https://github.com/vikasdotvivek/sim_ws/blob/df363249f05cc2f09d9eadd5ed351bece17d1e06/src/turtlebot3_gazebo/src/lab4/dynamic_obstacles.py#L92"
+    },
+    {
+      "rule": "silent-except",
+      "priority": "P2",
+      "path": "src/turtlebot3_gazebo/src/lab4/task1.py",
+      "line": 32,
+      "title": "Exception handler only passes",
+      "recommendation": "Decide whether the error is recoverable; surface nonrecoverable failures instead of silently continuing.",
+      "status": "review-required",
+      "source": "https://github.com/vikasdotvivek/sim_ws/blob/df363249f05cc2f09d9eadd5ed351bece17d1e06/src/turtlebot3_gazebo/src/lab4/task1.py#L32"
+    },
+    {
+      "rule": "silent-except",
+      "priority": "P2",
+      "path": "src/turtlebot3_gazebo/src/lab4/task2.py",
+      "line": 32,
+      "title": "Exception handler only passes",
+      "recommendation": "Decide whether the error is recoverable; surface nonrecoverable failures instead of silently continuing.",
+      "status": "review-required",
+      "source": "https://github.com/vikasdotvivek/sim_ws/blob/df363249f05cc2f09d9eadd5ed351bece17d1e06/src/turtlebot3_gazebo/src/lab4/task2.py#L32"
+    },
+    {
+      "rule": "silent-except",
+      "priority": "P2",
+      "path": "src/turtlebot3_gazebo/src/lab4/task3.py",
+      "line": 33,
+      "title": "Exception handler only passes",
+      "recommendation": "Decide whether the error is recoverable; surface nonrecoverable failures instead of silently continuing.",
+      "status": "review-required",
+      "source": "https://github.com/vikasdotvivek/sim_ws/blob/df363249f05cc2f09d9eadd5ed351bece17d1e06/src/turtlebot3_gazebo/src/lab4/task3.py#L33"
+    }
+  ],
+  "total_findings": 6,
+  "findings_omitted": 0,
+  "execution": "No repository code, tests, builds or hardware were executed."
+}
